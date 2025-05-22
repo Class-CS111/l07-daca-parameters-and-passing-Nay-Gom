@@ -51,20 +51,21 @@ public class Main
         birthCountry = UtilityBelt.readString("Enter birth country: ", 0, 50);
         termsAndConditions = UtilityBelt.readString("Enter terms and conditions: ", 0, 50);
         sex = UtilityBelt.readChar("Enter sex: ", "FfMmIiNn");
-        birthMonth = UtilityBelt.readString("Enter birth month (as 3 letter acronym in ALL CAPS): ", 3, 3);
         
         uscisNum1 = UtilityBelt.readInt("Enter USCIS # part 1: ", 0, 999);
         uscisNum2 = UtilityBelt.readInt("Enter USCIS # part 2: ", 0, 999);
         uscisNum3 = UtilityBelt.readInt("Enter USCIS # part 3: ", 0, 999);
        
+        birthMonth = UtilityBelt.readString("Enter birth month (as 3 letter acronym in ALL CAPS): ", 3, 3);
+        
         birthDay = UtilityBelt.readInt("Enter birth day: ", 1, 31);
         
         birthYear = UtilityBelt.readInt("Enter birth year: ", 1000, 9999);
 
        
-
-        validDay = UtilityBelt.readInt("Enter valid day: ", 1, 31);
         validMonth = UtilityBelt.readInt("Enter valid month: ", 1, 12);
+        validDay = UtilityBelt.readInt("Enter valid day: ", 1, 31);
+        
         validYear = UtilityBelt.readInt("Enter valid year: ", 1000, 9999);
 
         expireMonth = UtilityBelt.readInt("Enter expiration month: ", 1, 12);
